@@ -90,4 +90,14 @@ public class AmazonStepDefinitions {
 
         }
     }
+
+    @Then("Ilk urune click yapar")
+    public void ılk_urune_click_yapar() {
+        amazonPage.ilkUrunElementi.click();
+    }
+    @Then("Acilan urun isminin {string} icerdigini test eder")
+    public void acilan_urun_isminin_icerdigini_test_eder(String arananKelime) {
+        String actualUrunIsmi = amazonPage.ilkUrunIsimElementi.getText();
+        Assert.assertTrue(actualUrunIsmi.contains(arananKelime));
+    }
 }

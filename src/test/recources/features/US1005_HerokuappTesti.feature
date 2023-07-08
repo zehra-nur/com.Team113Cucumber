@@ -1,4 +1,4 @@
-
+@smoke
 Feature: US1005 Kullanici butonlari test eder
 
   Scenario: TC11 kullanici butonlari ve cikan yazilari test eder

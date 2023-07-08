@@ -34,4 +34,10 @@ public class AmazonPage {
 
     @FindBy(xpath = "(//div[@class='sg-col-inner'])[1]")
     public WebElement aramaSonucuElementi;
+
+    @FindBy(xpath = "(//div[@class='sg-col-inner'])[4]")
+    public WebElement ilkUrunElementi;
+
+    @FindBy(xpath = "//span[@id='productTitle']")
+    public WebElement ilkUrunIsimElementi;
 }

@@ -9,7 +9,7 @@ Feature: US1003 BackGroundg kullanarak tekrarlardan kurtulur
     Then Arama sonuclarinin Nutella icerdigini test eder
     And Sayfayi kapatir
 
-
+  @smoke
   Scenario: TC06 Amazon Java Testi
 
     When Java icin arama yapar
