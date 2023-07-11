@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="133.573" tests="2" skipped="0" failures="0" errors="0">
+<testcase classname="US1003 BackGroundg kullanarak tekrarlardan kurtulur" name="TC06 Amazon Java Testi" time="99.011">
+<system-out><![CDATA[
+Given Kullanici amazon anasayfaya gider.....................................passed
+When Java icin arama yapar..................................................passed
+Then Arama sonuclarinin Java icerdigini test eder...........................passed
+And Sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1005 Kullanici butonlari test eder" name="TC11 kullanici butonlari ve cikan yazilari test eder" time="34.393">
+<system-out><![CDATA[
+Given Kullanici "herokuUrl" anasayfaya gider................................passed
+Then "Add Element" butonuna basar...........................................passed
+And "Delete" butonu gorunur oluncaya kadar bekleyin.........................passed
+And “Delete” butonunun gorunur oldugunu test edin...........................passed
+Then Delete butonuna basarak butonu silin...................................passed
+And Delete butonunun gorunmedigini test edin................................passed
+And Sayfayi kapatir.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
