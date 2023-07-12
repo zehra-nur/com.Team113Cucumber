@@ -31,4 +31,10 @@ public class AutomationExercisePage {
 
     @FindBy(xpath = "//b[text()='Account Created!']")
     public WebElement accountCreatedText;
+
+    @FindBy(xpath = "(//input[@name='email'])[1]")
+    public WebElement loginEmailTextbox;
+
+    @FindBy(xpath = "//*[@*='password']")
+    public WebElement loginPasswordTextbox;
 }

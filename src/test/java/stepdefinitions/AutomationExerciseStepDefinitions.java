@@ -83,4 +83,17 @@ public class AutomationExerciseStepDefinitions {
         Assert.assertTrue(automationExercisePage.accountCreatedText.isDisplayed());
     }
 
+    @Given("Login to your account bolumunde email kutusuna @ isareti olmayan email adresi yazar")
+    public void login_to_your_account_bolumunde_email_kutusuna_isareti_olmayan_email_adresi_yazar() {
+        automationExercisePage.loginEmailTextbox.sendKeys("ByeByeWorld");
+
+    }
+    @Given("password kutusuna sifre yazar ve enter'a tiklar")
+    public void password_kutusuna_sifre_yazar_ve_enter_a_tiklar() {
+        automationExercisePage.loginPasswordTextbox.sendKeys("SeeYouSoon"+Keys.ENTER);
+    }
+    @Then("sisteme giris yapilamadigini test eder")
+    public void sistemeGirisYapilamadiginiTestEder() {
+        Assert.assertTrue(automationExercisePage.loginPasswordTextbox.isEnabled());
+    }
 }
